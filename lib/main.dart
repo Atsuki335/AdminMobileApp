@@ -140,7 +140,7 @@ class _Post extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       child: Card(
-          elevation: 8,
+          elevation: 8, //影の濃さ
           shadowColor: Colors.grey,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           child: Column(
@@ -149,7 +149,7 @@ class _Post extends StatelessWidget {
                 leading: ClipOval(
                     child: Container(
                   color: colorPrimary,
-                  width: 48,
+                  width: 48, //丸のサイズ
                   height: 48,
                   child: Center(
                       child: Text(
@@ -165,7 +165,7 @@ class _Post extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(width: 72),
+                    SizedBox(width: 50),
                     Container(
                       width: 16,
                       height: 16,
@@ -193,7 +193,7 @@ class _Post extends StatelessWidget {
                         style: TextStyle(color: Colors.blueAccent),
                       ),
                     ),
-                    SizedBox(width: 24),
+                    SizedBox(width: 5),
                     Expanded(
                         child: TextButton(
                       style: TextButton.styleFrom(
@@ -256,7 +256,7 @@ class PostList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 48),
+      padding: EdgeInsets.only(top: 70),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
